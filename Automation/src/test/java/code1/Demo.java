@@ -13,7 +13,7 @@ public class Demo {
    
 	@Test
 	//public static void main(String[] args) {
-	public void googleSearch(){
+	public void googleSearch() throws InterruptedException{
         // Set up ChromeDriver using WebDriverManager
         WebDriverManager.chromedriver().setup();
         // Create a new instance of ChromeDriver
@@ -24,7 +24,8 @@ public class Demo {
 
         // Close the browser
        
-    	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); 
+        Thread.sleep(5000); 
+        driver.quit();
     }
 }
 

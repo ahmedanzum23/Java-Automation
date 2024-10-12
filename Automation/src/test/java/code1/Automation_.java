@@ -18,10 +18,12 @@ public class Automation_ extends Login{
 		
 		driver.get(url);
 		driver.manage().window().maximize();
-		//Thread.sleep(1000);  //1000ms=1second, this count as a mili second.
+		Thread.sleep(10000);  //1000ms=1second, this count as a mili second.
 		
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50)); 
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(50)); 
 		driver.findElement(By.xpath("//span[contains(text(),'Blog')]")).click();
+		Thread.sleep(10000);
+		driver.quit();
 	}
 	
 }

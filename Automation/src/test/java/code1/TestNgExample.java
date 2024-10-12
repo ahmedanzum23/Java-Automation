@@ -74,10 +74,10 @@ public class TestNgExample extends Login {
 	}
 	
 	
-	//@Test (priority = 1)
-	//public void TestExamplePriority(){
+	@Test (priority = 1)
+	public void TestExamplePriority(){
          //System.out.println("priority need to  check");
-	//}
+	}
 	
 	
 }
